@@ -1,0 +1,91 @@
+h1{
+    text-align: center;
+    color:blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hidden_block{
+    position: fixed;
+    width: 300px;
+    height: 150;
+    background-color: rgb(235, 255, 196);
+    border-radius: 0px 20px 20px 0px;
+    left: -320px; 
+    transition: left 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 0;
+    border-right: 35px solid #2ef107;
+    top: 250px;
+}
+
+.hidden_block:hover{
+    left: 0;
+}
+
+ 
+.hidden_block::after {
+    content: "Контакти";
+    position: absolute;
+    right: -30px; 
+    transform: translateY(-50%);
+    writing-mode: vertical-rl; 
+    transform: rotate(-180deg);
+    font-size: 20px; 
+    color: black; 
+    text-align: center; 
+}
+
+.block_image{
+    width: 100px;
+    height: auto;
+    padding: 20px;
+    float: left;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    transform: translateX(-40px);
+    
+}
+p {
+    font-size: larger;
+    color: blue;
+    margin: 0;
+    padding: 0;
+}
+.block_link{
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.block {
+    position: relative; 
+    padding: 20px;
+    background-color: rgb(126, 161, 161);
+    border: 1px solid teal;
+}
+
+.position_block {
+    position: absolute; 
+    top: 10px; 
+    right: 200px; 
+    background-color: aliceblue;
+    padding: 10px;
+    border: 1px solid #ff4500;
+    color: teal;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor:pointer;
+}
+
+.image{
+    float: left;
+    width: 300px;
+    height: 400px;
+    margin: 10px 15px 10px 0;
+}
